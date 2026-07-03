@@ -1,0 +1,600 @@
+[
+    {
+        "id": "4a22ae1c4437b1c9",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a33f906e43e5bd46",
+        "type": "group",
+        "z": "4a22ae1c4437b1c9",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "462cdb60f6b3ae4c"
+        ],
+        "x": 74,
+        "y": 359,
+        "w": 152,
+        "h": 82
+    },
+    {
+        "id": "c0a4509d686cc91a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ac9fe803e89a18c7",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "c9fa5c783dcc47f2",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "8c7ef3b4a68c0ad3",
+        "type": "ui-page",
+        "name": "Sistema de Vigilancia TFG",
+        "ui": "ac9fe803e89a18c7",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "c9fa5c783dcc47f2",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7e377ca2cde66741",
+        "type": "ui-group",
+        "name": "Alertas y estado",
+        "page": "8c7ef3b4a68c0ad3",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ca1cd982ad5d1b76",
+        "type": "ui-group",
+        "name": "Cámara del robot",
+        "page": "8c7ef3b4a68c0ad3",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "3b7ed3e1f3b089bc",
+        "type": "ui-group",
+        "name": "Mapa",
+        "page": "8c7ef3b4a68c0ad3",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "79476a3736e37ea7",
+        "type": "ui-group",
+        "name": "Destino actual",
+        "page": "8c7ef3b4a68c0ad3",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b138da14a48f7f40",
+        "type": "mqtt in",
+        "z": "4a22ae1c4437b1c9",
+        "name": "Estado robot",
+        "topic": "robot/estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c0a4509d686cc91a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "4ccc16a27dc70fa2"
+            ]
+        ]
+    },
+    {
+        "id": "3a412da35e1f887e",
+        "type": "mqtt in",
+        "z": "4a22ae1c4437b1c9",
+        "name": "Alertas",
+        "topic": "events/alert/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c0a4509d686cc91a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "9dbccfe5266e29c0"
+            ]
+        ]
+    },
+    {
+        "id": "9dbccfe5266e29c0",
+        "type": "function",
+        "z": "4a22ae1c4437b1c9",
+        "name": "function 1",
+        "func": "// Parsear el payload: zona:tipo:estado:detalle\nconst partes = msg.payload.split(':');\nconst zona = partes[0] || '?';\nconst tipo = partes[1] || '?';\nconst estado = partes[2] || '?';\nconst detalle = partes.slice(3).join(':') || '';\n\nconst ahora = new Date().toLocaleTimeString();\n\n// Indicador visual según el estado\nlet icono = '';\nif (estado === 'CONFIRMADA') {\n    icono = '🔴';\n} else if (estado === 'FALSO_POSITIVO') {\n    icono = '⚪';\n}\n\nmsg.payload = {\n    indicador: icono,\n    hora: ahora,\n    zona: zona,\n    tipo: tipo,\n    estado: estado,\n    detalle: detalle\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "e9dda7665e33278e",
+                "a807b2d755418679",
+                "a11ea6239dd9cef5"
+            ]
+        ]
+    },
+    {
+        "id": "e9dda7665e33278e",
+        "type": "ui-table",
+        "z": "4a22ae1c4437b1c9",
+        "group": "7e377ca2cde66741",
+        "name": "tabla",
+        "label": "Historial de alertas",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 730,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a807b2d755418679",
+        "type": "switch",
+        "z": "4a22ae1c4437b1c9",
+        "name": "switch",
+        "property": "payload.estado",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "CONFIRMADA",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "d1f7f612a315abf6"
+            ]
+        ]
+    },
+    {
+        "id": "d1f7f612a315abf6",
+        "type": "function",
+        "z": "4a22ae1c4437b1c9",
+        "name": "function 2",
+        "func": "msg.payload = \"⚠️ ALERTA CONFIRMADA en \" + msg.payload.zona + \" (\" + msg.payload.tipo + \")\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 260,
+        "wires": [
+            [
+                "59cb5a389614d620"
+            ]
+        ]
+    },
+    {
+        "id": "59cb5a389614d620",
+        "type": "ui-notification",
+        "z": "4a22ae1c4437b1c9",
+        "ui": "ac9fe803e89a18c7",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#ff0000",
+        "displayTime": "5",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "notificación",
+        "x": 890,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a11ea6239dd9cef5",
+        "type": "function",
+        "z": "4a22ae1c4437b1c9",
+        "name": "function 3",
+        "func": "// Recuperar contadores guardados (o iniciar a 0)\nlet total = context.get('total') || 0;\nlet confirmadas = context.get('confirmadas') || 0;\nlet falsos = context.get('falsos') || 0;\n\n// Incrementar según el estado\ntotal += 1;\nif (msg.payload.estado === 'CONFIRMADA') {\n    confirmadas += 1;\n} else if (msg.payload.estado === 'FALSO_POSITIVO') {\n    falsos += 1;\n}\n\n// Guardar de nuevo\ncontext.set('total', total);\ncontext.set('confirmadas', confirmadas);\ncontext.set('falsos', falsos);\n\n// Texto para mostrar\nmsg.payload = `Total: ${total}  |  Confirmadas: ${confirmadas}  |  Falsos positivos: ${falsos}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 420,
+        "wires": [
+            [
+                "1a51dcf8a6cf06c2"
+            ]
+        ]
+    },
+    {
+        "id": "1a51dcf8a6cf06c2",
+        "type": "ui-text",
+        "z": "4a22ae1c4437b1c9",
+        "group": "7e377ca2cde66741",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Resumen de alertas",
+        "label": "Resumen de alertas",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 900,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "13d173a8535536a9",
+        "type": "ui-template",
+        "z": "4a22ae1c4437b1c9",
+        "group": "ca1cd982ad5d1b76",
+        "page": "",
+        "ui": "",
+        "name": "Camara YOLO",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"text-align: center; padding: 10px;\">\n        <h3 style=\"margin: 0 0 10px 0;\">Cámara del robot — Detección en vivo</h3>\n        <img src=\"http://localhost:8080/stream?topic=/yolo/imagen_anotada&type=mjpeg&quality=80\"\n             alt=\"Cámara YOLO\"\n             style=\"width: 100%; max-width: 480px; border: 2px solid #444; border-radius: 8px;\" />\n    </div>\n</template>\n\n<script>\n    export default {\n        data() {\n            // define variables available component-wide\n            // (in <template> and component functions)\n            return {\n                count: 0\n            }\n        },\n        watch: {\n            // watch for any changes of \"count\"\n            count: function () {\n                if (this.count % 5 === 0) {\n                    this.send({payload: 'Multiple of 5'})\n                }\n            }\n        },\n        computed: {\n            // automatically compute this variable\n            // whenever VueJS deems appropriate\n            formattedCount: function () {\n                return this.count + ' Apples'\n            }\n        },\n        methods: {\n            // expose a method to our <template> and Vue Application\n            increase: function () {\n                this.count++\n            }\n        },\n        mounted() {\n            // code here when the component is first loaded\n        },\n        unmounted() {\n            // code here when the component is removed from the Dashboard\n            // i.e. when the user navigates away from the page\n        }\n    }\n</script>\n<style>\n    /* define any styles here - supports raw CSS */\n    .my-class {\n        color: red;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 180,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ccc16a27dc70fa2",
+        "type": "ui-template",
+        "z": "4a22ae1c4437b1c9",
+        "group": "7e377ca2cde66741",
+        "page": "",
+        "ui": "",
+        "name": "Estado robot con color",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div style=\"padding: 10px; text-align: center;\">\n        <div style=\"font-size: 14px; color: #888; margin-bottom: 8px;\">\n            Estado del robot\n        </div>\n        <div :style=\"estiloEstado\" style=\"font-size: 22px; font-weight: bold; padding: 12px; border-radius: 8px;\">\n            {{ estadoActual }}\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            estadoActual: 'CONECTANDO...'\n        }\n    },\n    computed: {\n        estiloEstado() {\n            const colores = {\n                'PATRULLANDO':    { color: '#fff', background: '#28a745' },\n                'INVESTIGANDO':   { color: '#fff', background: '#fd7e14' },\n                'INSPECCIONANDO': { color: '#fff', background: '#007bff' },\n                'VOLVIENDO':      { color: '#fff', background: '#6c757d' }\n            };\n            return colores[this.estadoActual] || { color: '#000', background: '#e0e0e0' };\n        }\n    },\n    watch: {\n        msg: function() {\n            if (this.msg && this.msg.payload) {\n                this.estadoActual = this.msg.payload;\n            }\n        }\n    }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "462cdb60f6b3ae4c",
+        "type": "ui-template",
+        "z": "4a22ae1c4437b1c9",
+        "g": "a33f906e43e5bd46",
+        "group": "3b7ed3e1f3b089bc",
+        "page": "",
+        "ui": "",
+        "name": "Mapa",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <img src=\"http://localhost:8080/stream?topic=/dashboard/mapa&type=mjpeg\"\n         style=\"width:100%; max-width:500px;\" />\n</template>\n\n<script>\n    export default {\n        data() {\n            return {}\n        }\n    }\n</script>\n\n<style>\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55ed760cb5ed77dd",
+        "type": "function",
+        "z": "4a22ae1c4437b1c9",
+        "name": "function 4",
+        "func": "if (!msg.payload || msg.payload === '-') {\n    msg.payload = '🟢 Patrullando';\n} else {\n    msg.payload = '🎯 ' + msg.payload;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "fd504089735b0a0e"
+            ]
+        ]
+    },
+    {
+        "id": "fd504089735b0a0e",
+        "type": "ui-text",
+        "z": "4a22ae1c4437b1c9",
+        "group": "79476a3736e37ea7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Destino actual",
+        "label": "Destino actual",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 520,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a650161681c44a2b",
+        "type": "mqtt in",
+        "z": "4a22ae1c4437b1c9",
+        "name": "",
+        "topic": "robot/destino",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c0a4509d686cc91a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "55ed760cb5ed77dd"
+            ]
+        ]
+    },
+    {
+        "id": "eb281844a702966e",
+        "type": "mqtt in",
+        "z": "4a22ae1c4437b1c9",
+        "name": "",
+        "topic": "sensors/+/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c0a4509d686cc91a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "60392837a60bb307"
+            ]
+        ]
+    },
+    {
+        "id": "60392837a60bb307",
+        "type": "function",
+        "z": "4a22ae1c4437b1c9",
+        "name": "function 5",
+        "func": "const partes = msg.topic.split('/');\nif (partes.length >= 3 && msg.payload !== '0' && msg.payload !== 'false') {\n    const zona = partes[1];\n    const tipo = partes[2];\n    const iconos = {\n        pir: '👤', sonido: '🔊', flame: '🔥', gas: '💨',\n        fuego: '🚨', temperatura: '🌡️', vibracion: '📳', humo: '💨'\n    };\n    const icono = iconos[tipo] || '⚠️';\n    const hora = new Date().toLocaleTimeString();\n    msg.payload = `${icono} ${tipo.toUpperCase()} en ${zona} (${hora})`;\n    return msg;\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "7da4fae3a21c2c2e"
+            ]
+        ]
+    },
+    {
+        "id": "7da4fae3a21c2c2e",
+        "type": "ui-text",
+        "z": "4a22ae1c4437b1c9",
+        "group": "7e377ca2cde66741",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Último evento",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 580,
+        "y": 640,
+        "wires": []
+    }
+]

@@ -1,0 +1,7 @@
+esquina_inferior_izquierda: x=-7.480, y=7.488, qz=-0.475, qw=0.880
+inicio: x=-1.126, y=-0.408, qz=0.312, qw=0.950
+esquina_inferior_derecha: x=-7.406, y=-4.797, qz=-0.142, qw=0.990
+esquina_superior_derecha: x=2.888, y=-7.265, qz=-0.157, qw=0.988
+centro: x=6.311, y=-2.281, qz=0.180, qw=0.984
+esquina_superior_izquierda: x=6.515, y=7.399, qz=-0.977, qw=0.214
+
