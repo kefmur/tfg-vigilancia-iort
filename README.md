@@ -12,12 +12,12 @@ El sistema en funcionamiento se muestra en los siguientes vídeos:
 - **Demostración del dashboard** — Patrullaje autónomo, atención a
   eventos, confirmación visual con YOLOv8 y geolocalización de
   detecciones en tiempo real sobre el mapa del dashboard.
-  [Ver vídeo]([https://drive.google.com/file/d/127GJICOV_qDcC79gzif9fRjy7hMtO3g4/view?usp=sharing])
+  [Ver vídeo](https://drive.google.com/file/d/127GJICOV_qDcC79gzif9fRjy7hMtO3g4/view?usp=sharing)
 
 - **Sensores IoT físicos** — Nodos ESP32 con sensores reales
   (movimiento, sonido, gas, llama, vibración) detectando eventos
   físicos que disparan la respuesta del sistema.
-  [Ver vídeo]([https://drive.google.com/file/d/1HA8IKegfYxtaUjA__-DN3rdaSpLc2y-z/view?usp=sharing])
+  [Ver vídeo](https://drive.google.com/file/d/1HA8IKegfYxtaUjA__-DN3rdaSpLc2y-z/view?usp=sharing)
 
 ---
 
