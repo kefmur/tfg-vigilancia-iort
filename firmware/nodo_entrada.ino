@@ -14,7 +14,7 @@
 // ---------- CONFIGURACION (cambiar por nodo) ----------
 const char* WIFI_SSID     = " "; //"WIFI"
 const char* WIFI_PASSWORD = " "; //Contraseña
-const char* MQTT_BROKER   =  " "; // IP
+const char* MQTT_BROKER   =  " "; // IP de la jetson
 const int   MQTT_PORT     = 1883;
 const char* ZONA          = "inicio"; //Se puede cambiar por cualquier punto de navegación
 const char* CLIENT_ID     = "nodo1_entrada";
