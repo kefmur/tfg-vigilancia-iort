@@ -12,11 +12,11 @@
 #include <PubSubClient.h>
 
 // ---------- CONFIGURACION (cambiar por nodo) ----------
-const char* WIFI_SSID     = "DIGIFIBRA-56NC";
-const char* WIFI_PASSWORD = "RUHYkQ2z3kdG";
-const char* MQTT_BROKER   = "192.168.1.149";
+const char* WIFI_SSID     = " "; //"WIFI"
+const char* WIFI_PASSWORD = " "; //Contraseña
+const char* MQTT_BROKER   =  " "; // IP
 const int   MQTT_PORT     = 1883;
-const char* ZONA          = "inicio";
+const char* ZONA          = "inicio"; //Se puede cambiar por cualquier punto de navegación
 const char* CLIENT_ID     = "nodo1_entrada";
 // ------------------------------------------------------
 
