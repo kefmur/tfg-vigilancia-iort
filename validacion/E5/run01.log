@@ -1,0 +1,33 @@
+[INFO] [1781257508.218342755] [brain_node]: Cargados 6 waypoints: ['esquina_inferior_izquierda', 'esquina_inferior_derecha', 'inicio', 'esquina_superior_derecha', 'centro', 'esquina_superior_izquierda']
+[INFO] [1781257515.733739924] [brain_node]: Conectado a MQTT para publicar alertas.
+[INFO] [1781257519.820497296] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1781257519.821814768] [brain_node]: Nav2 activo. Iniciando comportamiento...
+[INFO] [1781257519.822747998] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781257519.827873146] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[INFO] [1781257971.387888534] [brain_node]: Navegando a: esquina_inferior_derecha
+[INFO] [1781257971.409625815] [basic_navigator]: Navigating to goal: -7.406 -4.797...
+[WARN] [1781257979.450225144] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781257979.457529510] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781257979.461924994] [brain_node]: Navegando a: inicio
+[INFO] [1781257979.482954271] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[WARN] [1781258010.128049328] [brain_node]: >>> EVENTO: zona=centro, tipo=fuego, gravedad=3
+[WARN] [1781258010.128908155] [brain_node]: Mas grave (3>2). INTERRUMPO.
+[INFO] [1781258010.129520666] [basic_navigator]: Canceling current task.
+[INFO] [1781258010.229138012] [brain_node]: Estado -> INVESTIGANDO (zona centro, gravedad 3)
+[INFO] [1781258010.230348921] [brain_node]: Navegando a: centro
+[INFO] [1781258010.235898671] [basic_navigator]: Navigating to goal: 6.311 -2.281...
+[INFO] [1781258354.863326332] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[INFO] [1781258355.344530638] [brain_node]: Deteccion durante rotacion: person:0.67
+[WARN] [1781258355.346237988] [brain_node]: >>> ALERTA: centro:fuego:CONFIRMADA:person:0.67
+[INFO] [1781258355.347368125] [brain_node]: Zona "centro" en cooldown durante 120s
+[INFO] [1781258355.825691678] [brain_node]: Pendiente en cola: inicio (gravedad 2).
+[INFO] [1781258355.826427076] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781258355.836811247] [brain_node]: Navegando a: inicio
+[INFO] [1781258355.859741364] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781258559.854383977] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[INFO] [1781258571.327015530] [brain_node]: Deteccion durante rotacion: person:0.67
+[WARN] [1781258571.328457939] [brain_node]: >>> ALERTA: inicio:pir:CONFIRMADA:person:0.67
+[INFO] [1781258571.331579825] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781258571.827763695] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781258571.837313842] [brain_node]: Navegando a: esquina_inferior_derecha
+[INFO] [1781258571.848731635] [basic_navigator]: Navigating to goal: -7.406 -4.797...

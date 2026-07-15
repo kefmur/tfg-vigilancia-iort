@@ -1,0 +1,24 @@
+[INFO] [1781089804.117386516] [brain_node]: Cargados 6 waypoints: ['esquina_inferior_izquierda', 'esquina_inferior_derecha', 'inicio', 'esquina_superior_derecha', 'centro', 'esquina_superior_izquierda']
+[INFO] [1781089811.004307115] [brain_node]: Conectado a MQTT para publicar alertas.
+[INFO] [1781089816.522716578] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1781089816.523471988] [brain_node]: Nav2 activo. Iniciando comportamiento...
+[INFO] [1781089816.524202886] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781089816.530042199] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[WARN] [1781089821.467360241] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781089821.468101508] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781089821.468743124] [brain_node]: Navegando a: inicio
+[INFO] [1781089821.475872613] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[WARN] [1781090009.538687332] [brain_node]: No pude llegar. VOLVIENDO.
+[INFO] [1781090010.025461248] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781090010.028963359] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781090010.036596336] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[WARN] [1781090020.806792858] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781090020.807554223] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781090020.808414375] [brain_node]: Navegando a: inicio
+[INFO] [1781090020.811390616] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781090070.531276284] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[WARN] [1781090077.026377777] [brain_node]: >>> ALERTA: inicio:pir:FALSO_POSITIVO:sin deteccion visual
+[INFO] [1781090077.027311436] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781090077.525389649] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781090077.527212420] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781090077.547394553] [basic_navigator]: Navigating to goal: -7.48 7.488...

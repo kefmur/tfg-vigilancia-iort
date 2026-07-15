@@ -1,0 +1,29 @@
+[INFO] [1781261173.821946795] [brain_node]: Cargados 6 waypoints: ['esquina_inferior_izquierda', 'esquina_inferior_derecha', 'inicio', 'esquina_superior_derecha', 'centro', 'esquina_superior_izquierda']
+[INFO] [1781261182.656684176] [brain_node]: Conectado a MQTT para publicar alertas.
+[INFO] [1781261187.934962036] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1781261187.935711905] [brain_node]: Nav2 activo. Iniciando comportamiento...
+[INFO] [1781261187.936453774] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781261187.943038403] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[WARN] [1781261198.727419321] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781261198.728158982] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781261198.729002006] [brain_node]: Navegando a: inicio
+[INFO] [1781261198.732897052] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781261339.446048342] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[INFO] [1781261351.938594578] [brain_node]: Deteccion durante rotacion: person:0.75
+[WARN] [1781261351.940653916] [brain_node]: >>> ALERTA: inicio:pir:CONFIRMADA:person:0.75
+[INFO] [1781261351.941451309] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781261352.437690097] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781261352.438400224] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781261352.453236051] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[INFO] [1781261387.319221305] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.
+[INFO] [1781261416.260862390] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.
+[WARN] [1781261485.811764110] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781261485.812951849] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781261485.813662745] [brain_node]: Navegando a: inicio
+[INFO] [1781261485.821278180] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781261656.959604337] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[WARN] [1781261670.442592355] [brain_node]: >>> ALERTA: inicio:pir:FALSO_POSITIVO:sin deteccion visual
+[INFO] [1781261670.445019486] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781261670.937707766] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781261670.938422375] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781261670.943635078] [basic_navigator]: Navigating to goal: -7.48 7.488...

@@ -1,0 +1,16 @@
+[INFO] [1781086908.146380824] [brain_node]: Cargados 6 waypoints: ['esquina_inferior_izquierda', 'esquina_inferior_derecha', 'inicio', 'esquina_superior_derecha', 'centro', 'esquina_superior_izquierda']
+[INFO] [1781086912.262743855] [brain_node]: Conectado a MQTT para publicar alertas.
+[INFO] [1781086916.607887846] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1781086916.608649183] [brain_node]: Nav2 activo. Iniciando comportamiento...
+[INFO] [1781086916.609384599] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781086916.619080791] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[WARN] [1781087331.979602767] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781087331.981669240] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781087331.983760962] [brain_node]: Navegando a: inicio
+[INFO] [1781087331.999088000] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781087549.634386838] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[WARN] [1781087556.111439048] [brain_node]: >>> ALERTA: inicio:pir:FALSO_POSITIVO:sin deteccion visual
+[INFO] [1781087556.112242213] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781087556.612805129] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781087556.613545540] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781087556.619130733] [basic_navigator]: Navigating to goal: -7.48 7.488...

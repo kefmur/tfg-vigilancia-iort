@@ -1,0 +1,33 @@
+[INFO] [1781023393.408469979] [brain_node]: Cargados 6 waypoints: ['esquina_inferior_izquierda', 'esquina_inferior_derecha', 'inicio', 'esquina_superior_derecha', 'centro', 'esquina_superior_izquierda']
+[INFO] [1781023397.504383010] [brain_node]: Conectado a MQTT para publicar alertas.
+[INFO] [1781023401.647032948] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1781023401.648401797] [brain_node]: Nav2 activo. Iniciando comportamiento...
+[INFO] [1781023401.649565103] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781023401.652153452] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[WARN] [1781023416.774119245] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[INFO] [1781023416.775199379] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781023416.778519336] [brain_node]: Navegando a: inicio
+[INFO] [1781023416.787419874] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[WARN] [1781023448.276932090] [brain_node]: >>> EVENTO: zona=inicio, tipo=sonido, gravedad=1
+[INFO] [1781023448.292500746] [brain_node]: Gravedad 1 encolada.
+[INFO] [1781023472.160282470] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[WARN] [1781023478.651108916] [brain_node]: >>> ALERTA: inicio:pir:FALSO_POSITIVO:sin deteccion visual
+[INFO] [1781023478.652692360] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781023479.151700165] [brain_node]: Cola: descarto inicio (en cooldown).
+[INFO] [1781023479.153028624] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781023479.154701703] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781023479.158717451] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[INFO] [1781023533.321559742] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.
+[INFO] [1781023546.479687829] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.
+[WARN] [1781023700.401032218] [brain_node]: >>> EVENTO: zona=inicio, tipo=sonido, gravedad=1
+[INFO] [1781023700.402012374] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 1)
+[INFO] [1781023700.402780107] [brain_node]: Navegando a: inicio
+[INFO] [1781023700.405311794] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781023937.186288291] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[WARN] [1781023943.651326585] [brain_node]: >>> ALERTA: inicio:sonido:FALSO_POSITIVO:sin deteccion visual
+[INFO] [1781023943.656222007] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781023944.150962507] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781023944.151871394] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781023944.157325262] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[INFO] [1781023957.310584881] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.
+[INFO] [1781023962.752716412] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.

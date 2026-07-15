@@ -1,0 +1,24 @@
+[INFO] [1781002585.682452523] [brain_node]: Cargados 6 waypoints: ['esquina_inferior_izquierda', 'esquina_inferior_derecha', 'inicio', 'esquina_superior_derecha', 'centro', 'esquina_superior_izquierda']
+[INFO] [1781002592.768417565] [brain_node]: Conectado a MQTT para publicar alertas.
+[INFO] [1781002596.905235965] [basic_navigator]: Nav2 is ready for use!
+[INFO] [1781002596.911630503] [brain_node]: Nav2 activo. Iniciando comportamiento...
+[INFO] [1781002596.926006118] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781002596.931646012] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[WARN] [1781002813.847021587] [brain_node]: >>> EVENTO: zona=inicio, tipo=sonido, gravedad=1
+[INFO] [1781002813.847898666] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 1)
+[INFO] [1781002813.849877247] [brain_node]: Navegando a: inicio
+[INFO] [1781002813.855586294] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[WARN] [1781002916.350044195] [brain_node]: >>> EVENTO: zona=inicio, tipo=pir, gravedad=2
+[WARN] [1781002916.350990908] [brain_node]: Mas grave (2>1). INTERRUMPO.
+[INFO] [1781002916.351746800] [basic_navigator]: Canceling current task.
+[INFO] [1781002916.381495716] [brain_node]: Estado -> INVESTIGANDO (zona inicio, gravedad 2)
+[INFO] [1781002916.382349498] [brain_node]: Navegando a: inicio
+[INFO] [1781002916.421796943] [basic_navigator]: Navigating to goal: -1.126 -0.408...
+[INFO] [1781003047.940378377] [brain_node]: Llegue a la zona. INSPECCIONANDO...
+[WARN] [1781003054.425928989] [brain_node]: >>> ALERTA: inicio:pir:FALSO_POSITIVO:sin deteccion visual
+[INFO] [1781003054.426918455] [brain_node]: Zona "inicio" en cooldown durante 120s
+[INFO] [1781003054.926513165] [brain_node]: Cola: descarto inicio (en cooldown).
+[INFO] [1781003054.927526920] [brain_node]: Cola vacia. Estado -> PATRULLANDO
+[INFO] [1781003054.935308982] [brain_node]: Navegando a: esquina_inferior_izquierda
+[INFO] [1781003054.953421716] [basic_navigator]: Navigating to goal: -7.48 7.488...
+[INFO] [1781003070.065467228] [brain_node]: Zona "inicio" en cooldown. Evento ignorado.
